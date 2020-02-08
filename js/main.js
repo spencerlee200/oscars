@@ -77,10 +77,10 @@ function buildBingo(){
   for(var i = 0; i < _total; i++){
     var stamped = _selectedArray[i] == 1 ? "box stamped" : 'box';
     if(i == 12){
-      var square = $("<li class='" + stamped + "' data-id='" + i + "'><div class='inner_box'><div class='stamp'><img class='oscar' src='../img/oscar.svg' /><img class='circle' src='../img/circle.svg' /></div><span>" + window.localStorage.getItem('best_picture') + " wins best picture</span></div></li>");
+      var square = $("<li class='" + stamped + "' data-id='" + i + "'><div class='inner_box'><div class='stamp'><img class='oscar' src='./img/oscar.svg' /><img class='circle' src='./img/circle.svg' /></div><span>" + window.localStorage.getItem('best_picture') + " wins best picture</span></div></li>");
     }
     else {
-      var square = $("<li class='" + stamped + "' data-id='" + i + "'><div class='inner_box'><div class='stamp'><img class='oscar' src='../img/oscar.svg' /><img class='circle' src='../img/circle.svg' /></div><span>" + _data[i].answer + "</span></div></li>");
+      var square = $("<li class='" + stamped + "' data-id='" + i + "'><div class='inner_box'><div class='stamp'><img class='oscar' src='./img/oscar.svg' /><img class='circle' src='./img/circle.svg' /></div><span>" + _data[i].answer + "</span></div></li>");
     }
 
     container.append(square);
