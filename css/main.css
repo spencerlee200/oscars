@@ -83,16 +83,15 @@ html {
   padding-left: 0;
   z-index: 1;
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 95%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 900px;
   margin-bottom: 10em;
-  margin-top: 5em;
 }
 
 .box {
@@ -166,13 +165,9 @@ html {
   user-select: none;
 }
 
-@media screen and (max-width:600px)  {
-  #bingo ul {
-    margin-top: 2em;
-  }
-
-  #best_picture h1 {
-    font-size: 2.8em;
-    width: 95%;
-  }
+@media screen and (max-width:900px)  {
+    #best_picture h1 {
+        font-size: 2.8em;
+        width: 95%;
+    }
 }
